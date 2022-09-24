@@ -4,6 +4,7 @@ import path from 'path'
 import helmet from 'helmet'
 import StatusCodes from 'http-status-codes'
 import express, { Request, Response, NextFunction } from 'express'
+import {db} from './config/database'
 
 import 'express-async-errors'
 
@@ -11,6 +12,10 @@ import BaseRouter from './routes/api'
 import logger from 'jet-logger'
 import { CustomError } from '@shared/errors'
 import envVars from '@shared/env-vars'
+
+db.authenticate()
+  .then(() => console.log("Database connected ..."))
+  .then((err) => console.log("Error: ", err))
 
 // **** Init express **** //
 
