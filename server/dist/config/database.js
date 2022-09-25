@@ -9,6 +9,8 @@ export const database = new Sequelize('errorlab', 'postgres', 'ustdedt8', {
         idle: 10000
     },
     define: {
-        freezeTableName: true
+        freezeTableName: true,
+        createdAt: false,
+        updatedAt: false,
     }
 });

@@ -4,7 +4,7 @@ import { app } from './app.js'
 import { createServer } from 'http'
 import { debug } from 'console'
 
-const port = normalizePort(process.env.PORT || '3000')
+const port = normalizePort(process.env.PORT || '4000')
 app.set('port', port)
 
 const server = createServer(app)
@@ -33,7 +33,7 @@ function onError(error) {
   }
 
   const bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port
-
+  console.log(error)
   switch (error.code) {
     case 'EACCES':
       console.error(bind + ' requires elevated privileges')
