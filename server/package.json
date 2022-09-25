@@ -1,7 +1,7 @@
 {
   "name": "errorlab",
   "version": "1.0.0",
-  "description": "",
+  "description": "Issue tracker to handle projects in a corporate team",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,32 +11,35 @@
     "build": "npx tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "vikms",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "~1.4.4",
-    "cors": "^2.8.5",
+    "cors": "2.8.5",
     "debug": "~2.6.9",
-    "dotenv": "^16.0.2",
-    "express": "^4.18.1",
-    "morgan": "~1.9.1"
+    "dotenv": "16.0.2",
+    "express": "4.18.1",
+    "morgan": "~1.9.1",
+    "pg": "8.8.0",
+    "pg-hstore": "2.3.4",
+    "sequelize": "6.23.1"
   },
   "devDependencies": {
-    "@types/cookie-parser": "^1.4.3",
-    "@types/cors": "^2.8.12",
-    "@types/express": "^4.17.14",
-    "@types/node": "^18.7.20",
-    "@typescript-eslint/eslint-plugin": "^5.38.0",
-    "concurrently": "^7.4.0",
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard-with-typescript": "^23.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.3.0",
-    "eslint-plugin-promise": "^6.0.1",
-    "express-generator": "^4.16.1",
-    "nodemon": "^2.0.20",
-    "prettier": "^2.7.1",
-    "typescript": "^4.8.3"
+    "eslint": "8.24.0",
+    "nodemon": "2.0.20",
+    "prettier": "2.7.1",
+    "typescript": "4.8.3",
+    "concurrently": "7.4.0",
+    "eslint-plugin-n": "15.3.0",
+    "express-generator": "4.16.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-promise": "6.0.1",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-standard-with-typescript": "23.0.0",
+    "@types/cookie-parser": "1.4.3",
+    "@types/cors": "2.8.12",
+    "@types/express": "4.17.14",
+    "@types/node": "18.7.20",
+    "@typescript-eslint/eslint-plugin": "5.38.0"
   }
 }

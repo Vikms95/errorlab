@@ -6,7 +6,7 @@ import { ToastContainer } from 'react-bootstrap'
 function App() {
   useEffect(() => {
     console.log('Hi')
-    fetch('http://localhost:4000/api/')
+    fetch('http://localhost:4000/api/users')
       .then(async res => await res.json())
       .then(data => console.log(data))
       .catch(err => console.log(err))
