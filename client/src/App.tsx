@@ -1,6 +1,7 @@
 import logo from './logo.svg'
 import './App.css'
 import { useEffect } from 'react'
+import { ToastContainer } from 'react-bootstrap'
 
 function App() {
   useEffect(() => {
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
+        <ToastContainer>hello</ToastContainer>
         <img src={logo} className='App-logo' alt='logo' />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
