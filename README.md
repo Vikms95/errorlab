@@ -1,5 +1,14 @@
 # errorlab
 
+TODO
+ - Figure out how to use same Postgre database on different computers
+  :upload to Railway?
+  https://blog.railway.app/p/expressjs-with-postgresql
+  https://dev.to/mr_destructive/django-postgresql-deployment-on-railway-app-d54
+  :upload to Render?(90 days free)
+ - Create Models
+ - Create Components
+
 REMINDERS
  - Start with mobile first
  - Plan on which composition pattern will you use for each Component
@@ -21,6 +30,7 @@ TECHNOLOGIES USED
  
 - RESOURCES
  https://blog.logrocket.com/getting-started-with-postgres-in-your-react-app/
+ https://sequelize.org/
  
  
 ### SCHEMAS ###

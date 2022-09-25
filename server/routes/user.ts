@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.get('/users', async function (req, res, next) {
   const users = await User.findAll({})
-  res.json({ users })
+  res.json({ users, message: "hello worlhjkhjkd" })
 })
 
 router.post('/users', async function (req, res, next) {

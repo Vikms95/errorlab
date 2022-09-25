@@ -13,7 +13,7 @@ const router = express.Router();
 router.get('/users', function (req, res, next) {
     return __awaiter(this, void 0, void 0, function* () {
         const users = yield User.findAll({});
-        res.json({ users });
+        res.json({ users, message: "hello worlhjkhjkd" });
     });
 });
 router.post('/users', function (req, res, next) {
