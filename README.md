@@ -3,8 +3,8 @@
 TODO
  - Figure out how to use same Postgre database on different computers
   :upload to Railway?
-  https://blog.railway.app/p/expressjs-with-postgresql
-  https://dev.to/mr_destructive/django-postgresql-deployment-on-railway-app-d54
+https://blog.railway.app/p/expressjs-with-postgresql
+FOLLOW THIS > SETUP RAILWAY CLI REQUIRES NODE > 16
   :upload to Render?(90 days free)
  - Create Models
  - Create Components

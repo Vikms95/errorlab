@@ -1,4 +1,5 @@
 import { Sequelize } from "sequelize";
+
 export const database = new Sequelize('errorlab', 'postgres', 'ustdedt8', {
   host: 'localhost',
   dialect: 'postgres',

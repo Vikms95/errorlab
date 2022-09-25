@@ -11,7 +11,7 @@ import { userRouter } from './routes/user.js'
 
 database.authenticate()
  .then(() => console.log('Database connected'))
- .catch((err) => console.log('Error ', err))
+ .catch((err: Error) => console.log('Error ', err))
 
 const app: Express = express()
 const __dirname = path.resolve()
