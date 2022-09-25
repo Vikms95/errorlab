@@ -4,8 +4,9 @@ import { useEffect } from 'react'
 
 function App() {
   useEffect(() => {
-    fetch('http://localhost:4000/')
-      .then(res => res.json())
+    console.log('Hi')
+    fetch('http://localhost:4000/api/')
+      .then(async res => await res.json())
       .then(data => console.log(data))
       .catch(err => console.log(err))
   })
