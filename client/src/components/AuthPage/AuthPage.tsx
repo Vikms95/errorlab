@@ -1,5 +1,4 @@
-import React, { ReactElement, useState } from 'react'
-import { CurrentForm } from '../../types'
+import { ReactElement } from 'react'
 import { Container } from 'react-bootstrap'
 import authBackground from '../../assets/auth-bg.jpg'
 
@@ -8,10 +7,6 @@ interface Props {
 }
 
 export function AuthPage({ children }: Props) {
-  const [currentForm, setCurrentForm] = useState<CurrentForm>(
-    CurrentForm.Register
-  )
-
   return (
     <Container
       fluid
@@ -21,8 +16,7 @@ export function AuthPage({ children }: Props) {
         height: '100vh',
       }}
     >
-      {React.isValidElement(children) &&
-        React.cloneElement(children, { currentForm })}
+      {children}
     </Container>
   )
 }

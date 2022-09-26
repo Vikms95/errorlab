@@ -1,10 +1,10 @@
-import { CurrentForm } from '../../types'
+import { ReactElement } from 'react'
+import { Form as FormBS } from 'react-bootstrap'
 
 interface Props {
-  currentForm?: CurrentForm
+  children?: ReactElement
 }
 
-export function Form({ currentForm }: Props) {
-  console.log(currentForm)
-  return <div>Form</div>
+export function Form({ children }: Props) {
+  return <FormBS>{children}</FormBS>
 }

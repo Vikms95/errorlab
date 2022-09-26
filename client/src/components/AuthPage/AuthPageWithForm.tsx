@@ -1,9 +1,20 @@
+import { useState } from 'react'
 import { AuthPage } from './AuthPage'
-import { Form } from '../Form'
+import { FormWithLogin, FormWithRegister } from '../Form'
+import { CurrentForm } from '../../types'
+
 export function AuthPageWithForm() {
+  const [currentForm, setCurrentForm] = useState<CurrentForm>(
+    CurrentForm.Register
+  )
+
   return (
     <AuthPage>
-      <Form></Form>
+      {currentForm === 'register' ? (
+        <FormWithRegister setCurrentForm={setCurrentForm} />
+      ) : (
+        <FormWithLogin setCurrentForm={setCurrentForm} />
+      )}
     </AuthPage>
   )
 }
