@@ -1,10 +1,14 @@
 import { ReactElement } from 'react'
-import { Form as FormStyle } from 'react-bootstrap'
+import { Container, Form as FormBS } from 'react-bootstrap'
 
 interface Props {
-  children?: ReactElement
+  children?: ReactElement | ReactElement[]
 }
 
 export function Form({ children }: Props) {
-  return <FormStyle className='alert'>{children}</FormStyle>
+  return (
+    <Container className='vh-100 d-flex justify-content-center align-items-center'>
+      <FormBS className='p-10'>{children}</FormBS>
+    </Container>
+  )
 }

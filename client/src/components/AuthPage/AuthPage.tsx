@@ -10,10 +10,10 @@ export function AuthPage({ children }: Props) {
   return (
     <Container
       fluid
+      className='vh-100'
       style={{
         backgroundImage: `url(${authBackground})`,
         backgroundPosition: 'center',
-        height: '100vh',
       }}
     >
       {children}
