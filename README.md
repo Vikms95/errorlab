@@ -6,8 +6,12 @@ TODO
 https://blog.railway.app/p/expressjs-with-postgresql
 FOLLOW THIS > SETUP RAILWAY CLI REQUIRES NODE > 16
   :upload to Render?(90 days free)
+ - Problem with @typescript-eslint/parser comes with Node version?
+ 
  - Create Models
  - Create Components
+
+
 
 REMINDERS
  - Start with mobile first
