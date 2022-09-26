@@ -1,2 +1,2 @@
 export { Dashboard } from './Dashboard/Dashboard'
-export { AuthPage } from './AuthPage/AuthPage'
+export { AuthPageWithForm } from './AuthPage/_index'

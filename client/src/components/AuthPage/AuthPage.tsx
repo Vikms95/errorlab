@@ -1,16 +1,28 @@
-import { Container, Button } from 'react-bootstrap'
+import React, { ReactElement, useState } from 'react'
+import { CurrentForm } from '../../types'
+import { Container } from 'react-bootstrap'
 import authBackground from '../../assets/auth-bg.jpg'
 
-export function AuthPage() {
+interface Props {
+  children?: ReactElement
+}
+
+export function AuthPage({ children }: Props) {
+  const [currentForm, setCurrentForm] = useState<CurrentForm>(
+    CurrentForm.Register
+  )
+
   return (
     <Container
+      fluid
       style={{
         backgroundImage: `url(${authBackground})`,
-        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100vh',
       }}
-      className='vh-100 d-flex flex-column'
     >
-      <Button> Hello World </Button>
+      {React.isValidElement(children) &&
+        React.cloneElement(children, { currentForm })}
     </Container>
   )
 }

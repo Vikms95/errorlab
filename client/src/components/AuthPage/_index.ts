@@ -1,0 +1,1 @@
+export { AuthPageWithForm } from './AuthPageWithForm'

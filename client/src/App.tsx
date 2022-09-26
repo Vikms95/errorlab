@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
-import { Dashboard, AuthPage } from './components'
+import { Dashboard, AuthPageWithForm } from './components'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Container className='vh-100 h-100'>
         <Routes>
           <Route path='/' element={<Dashboard />} />
-          <Route path='/account' element={<AuthPage />} />
+          <Route path='/account' element={<AuthPageWithForm />} />
         </Routes>
       </Container>
     </Router>
