@@ -9,7 +9,10 @@ interface Props {
 export function FormWithLogin({ setCurrentForm }: Props) {
   return (
     <Form>
-      <Button onClick={() => setCurrentForm(CurrentForm.Register)}>
+      <Button
+        onClick={() => setCurrentForm(CurrentForm.Register)}
+        className='alert-dark'
+      >
         formwithlogin
       </Button>
     </Form>
