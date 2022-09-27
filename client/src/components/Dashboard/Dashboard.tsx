@@ -1,3 +1,9 @@
+import { Container } from 'react-bootstrap'
+
 export function Dashboard() {
-  return <div>Dashboard</div>
+  return (
+    <Container data-testid='dashboard' fluid>
+      Dashboard
+    </Container>
+  )
 }

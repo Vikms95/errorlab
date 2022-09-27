@@ -8,7 +8,7 @@ interface Props {
 export function Form({ children }: Props) {
   return (
     <Container className='vh-100 d-flex justify-content-center align-items-center'>
-      <FormBS className='p-10'>{children}</FormBS>
+      <FormBS className='p-10 bg-light'>{children}</FormBS>
     </Container>
   )
 }
