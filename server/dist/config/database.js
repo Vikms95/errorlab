@@ -1,13 +1,8 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import { Sequelize } from "sequelize";
-export const database = new Sequelize('errorlab', 'postgres', 'ustdedt8', {
-    host: 'localhost',
-    dialect: 'postgres',
-    pool: {
-        max: 5,
-        min: 0,
-        acquire: 30000,
-        idle: 10000
-    },
+const uri = process.env.DB_URI;
+export const database = new Sequelize(uri, {
     define: {
         freezeTableName: true,
         createdAt: false,
