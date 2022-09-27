@@ -1,18 +1,5 @@
 # errorlab
 
-TODO
- - Figure out how to use same Postgre database on different computers
-  :upload to Railway?
-https://blog.railway.app/p/expressjs-with-postgresql
-FOLLOW THIS > SETUP RAILWAY CLI REQUIRES NODE > 16
-  :upload to Render?(90 days free)
- - Problem with @typescript-eslint/parser comes with Node version?
- 
- - Create Models
- - Create Components
-
-
-
 REMINDERS
  - Start with mobile first
  - Plan on which composition pattern will you use for each Component
@@ -38,9 +25,26 @@ TECHNOLOGIES USED
  
  
 ### SCHEMAS ###
- 
-REQUIREMENTS  
- 
+
+ - User
+  *-* Username
+  *-* Email
+  *-* Password
+  *-* Avatar
+  *-* AssociatedProjects
+  *-* SubmittedTickets
+  
+ - Project
+  *-* Details info (all in its property > title, status, description progress, priority, start, deadline )
+  *-* Members(array of objects with the User id and its status as props? (dev or manager?))
+  *-* Tickets (array)
+
+ - Ticket
+  *_* Details(all in its property > title, description, status, progress, priority, type, entered, deadline )
+  *-* Project
+  *-* Submitter
+  *-* Comments
+
 <!-- !CORE FUNCTIONALITY -->
  
 ### AUTH ###
@@ -198,3 +202,14 @@ v row of 3 columns
  
 SECONDARY FUNCTIONALITY
  
+
+ TODO
+ <!-- - Figure out how to use same Postgre database on different computers
+  :upload to Railway? -->
+  <!-- :upload to Render?(90 days free) -->
+ - Problem with @typescript-eslint/parser comes with Node version?
+ 
+ - Create Models
+ <!-- - Create Components -->
+
+
