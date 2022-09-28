@@ -1,3 +1,4 @@
+import { ReactElement } from 'react'
 import { Col, Row, Container } from 'react-bootstrap'
 import {
   ProjectInfo,
@@ -9,7 +10,11 @@ import {
   ProjectActivity,
 } from '../Project/index'
 
-export function Project() {
+interface Props {
+  children?: ReactElement
+}
+
+export function Project({ children }: Props) {
   const details = {
     startDate: '03/21/06',
     deadLine: '03/21/06',
@@ -19,7 +24,7 @@ export function Project() {
   return (
     <Container
       fluid
-      className='vh-100 p-4 p-sm-5'
+      className='h-100 p-4 p-sm-5'
       style={{ backgroundColor: '#edf1f5' }}
       data-testid='project'
     >

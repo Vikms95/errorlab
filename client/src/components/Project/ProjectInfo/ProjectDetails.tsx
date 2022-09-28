@@ -14,10 +14,10 @@ export function ProjectDetails({ details }: Props) {
 
   return (
     <Col className='bg-white rounded-3'>
-      <Row>{startDate} </Row>
-      <Row>{deadLine}</Row>
-      <Row>{priority}</Row>
-      <Row>{status}</Row>
+      <Row className='p-2 p-sm-3'>{startDate} </Row>
+      <Row className='p-2 p-sm-3'>{deadLine}</Row>
+      <Row className='p-2 p-sm-3'>{priority}</Row>
+      <Row className='p-2 p-sm-3'>{status}</Row>
     </Col>
   )
 }

@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { Col, Row, Stack, Container } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 interface Props {
   children?: ReactElement | ReactElement[]
