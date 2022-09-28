@@ -7,5 +7,5 @@ interface Props {
 }
 
 export function ProjectProgress({ title, description, progress }: Props) {
-  return <Col className='bg-white rounded-2 p-4'>{title}</Col>
+  return <Col className='col-12 col-md-6 bg-white rounded-2 '>{title}</Col>
 }

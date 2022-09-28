@@ -11,27 +11,29 @@ export function Project() {
   return (
     <Container
       fluid
-      data-testid='project'
-      className='vh-100 d-flex flex-column flex-wrap gap-5 p-4 p-sm-5'
+      className='vh-100 p-4 p-sm-5'
       style={{ backgroundColor: '#edf1f5' }}
+      data-testid='project'
     >
-      <ProjectInfo>
-        <ProjectProgress
-          title='Errorlab'
-          description='Final project for Odin'
-          progress={1}
-        />
-        <ProjectDetails details={details} />
-      </ProjectInfo>
-      {/*  */}
       <Row>
-        <Col>Manager</Col>
-        <Col>Staff</Col>
-        <Col>History</Col>
-      </Row>
+        <ProjectInfo>
+          <ProjectProgress
+            title='Errorlab'
+            description='Final project for Odin'
+            progress={1}
+          />
+          <ProjectDetails details={details} />
+        </ProjectInfo>
+        {/*  */}
+        <Row>
+          <Col>Manager</Col>
+          <Col>Staff</Col>
+          <Col>History</Col>
+        </Row>
 
-      <Row>
-        <Col>Tickets</Col>
+        <Row>
+          <Col>Tickets</Col>
+        </Row>
       </Row>
     </Container>
   )

@@ -1,10 +1,16 @@
 import { ReactElement } from 'react'
-import { Col, Row, Stack } from 'react-bootstrap'
+import { Col, Row, Stack, Container } from 'react-bootstrap'
 
 interface Props {
   children?: ReactElement | ReactElement[]
 }
 
+const ProjectInfoCont = 'col-md-12'
+
 export function ProjectInfo({ children }: Props) {
-  return <Row className='d-flex flex-wrap gap-5'>{children}</Row>
+  return (
+    <Col className={ProjectInfoCont}>
+      <Row className='flex-md-nowrap gap-5'>{children}</Row>
+    </Col>
+  )
 }

@@ -13,7 +13,7 @@ export function ProjectDetails({ details }: Props) {
   const { startDate, deadLine, priority, status } = details
 
   return (
-    <Col className='bg-white rounded-2 p-4'>
+    <Col className='col-12 col-md-6 bg-white rounded-2'>
       <Row>{startDate} </Row>
       <Row>{deadLine}</Row>
       <Row>{priority}</Row>
