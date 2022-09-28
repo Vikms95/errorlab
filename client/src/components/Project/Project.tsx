@@ -15,7 +15,7 @@ export function Project() {
       style={{ backgroundColor: '#edf1f5' }}
       data-testid='project'
     >
-      <Row>
+      <Row className='gap-3 gap-lg-5'>
         <ProjectInfo>
           <ProjectProgress
             title='Errorlab'
@@ -24,7 +24,6 @@ export function Project() {
           />
           <ProjectDetails details={details} />
         </ProjectInfo>
-        {/*  */}
         <Row>
           <Col>Manager</Col>
           <Col>Staff</Col>
