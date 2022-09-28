@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { Col, Row, Container } from 'react-bootstrap'
+import { Col, Container } from 'react-bootstrap'
 import {
   ProjectInfo,
   ProjectProgress,
@@ -45,9 +45,7 @@ export function Project({ children }: Props) {
           <ProjectTeam />
         </ProjectActivity>
 
-        <Row>
-          <Col>Tickets</Col>
-        </Row>
+        {children}
       </Col>
     </Container>
   )

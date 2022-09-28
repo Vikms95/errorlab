@@ -207,6 +207,7 @@ TODO
 <!-- - Problem with @typescript-eslint/parser comes with Node version? -->
 
 <!-- - Create Base Components -->
-- Make skeleton of Project and Ticket 
-
+- Make skeleton of Project and Ticket
+  <!-- :make ProjectWithTickets -->
+  :within ProjectWithTickets it will just be an extension to include TicketsLayout
 
