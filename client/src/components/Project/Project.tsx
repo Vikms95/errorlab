@@ -1,5 +1,13 @@
 import { Col, Row, Container } from 'react-bootstrap'
-import { ProjectInfo, ProjectProgress, ProjectDetails } from '../Project/index'
+import {
+  ProjectInfo,
+  ProjectProgress,
+  ProjectDetails,
+  ProjectManager,
+  ProjectTeam,
+  ProjectHistory,
+  ProjectActivity,
+} from '../Project/index'
 
 export function Project() {
   const details = {
@@ -15,25 +23,27 @@ export function Project() {
       style={{ backgroundColor: '#edf1f5' }}
       data-testid='project'
     >
-      <Row className='gap-3 gap-lg-5'>
+      <Col className='gap-3'>
         <ProjectInfo>
           <ProjectProgress
+            progress={1}
             title='Errorlab'
             description='Final project for Odin'
-            progress={1}
           />
+
           <ProjectDetails details={details} />
         </ProjectInfo>
-        <Row>
-          <Col>Manager</Col>
-          <Col>Staff</Col>
-          <Col>History</Col>
-        </Row>
+
+        <ProjectActivity>
+          <ProjectHistory />
+          <ProjectManager />
+          <ProjectTeam />
+        </ProjectActivity>
 
         <Row>
           <Col>Tickets</Col>
         </Row>
-      </Row>
+      </Col>
     </Container>
   )
 }

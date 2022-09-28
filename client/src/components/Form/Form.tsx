@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import { Container, Form as FormBS } from 'react-bootstrap'
 
-const FormClass = 'd-flex flex-column py-5 px-4 rounded bg-white'
+const FormClass = 'd-flex flex-column py-5 px-4 rounded-3 bg-white'
 const FormContainer = 'd-flex justify-content-center align-items-center vh-100'
 
 interface Props {

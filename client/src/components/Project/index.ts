@@ -1,3 +1,7 @@
 export {ProjectInfo} from './ProjectInfo'
 export {ProjectProgress} from './ProjectProgress'
 export {ProjectDetails} from './ProjectDetails'
+export {ProjectActivity} from './ProjectActivity'
+export {ProjectManager} from './ProjectManager'
+export {ProjectTeam} from './ProjectTeam'
+export {ProjectHistory} from './ProjectHistory'
