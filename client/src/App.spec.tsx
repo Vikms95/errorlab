@@ -8,10 +8,10 @@ test('renders application', () => {
 
 test('redirects to dashboard if session is found', () => {
   render(<App />)
-  expect(screen.getByTestId('app')).toBeInTheDocument()
+  expect(screen.getByTestId('dashboard')).toBeInTheDocument()
 })
 
-test('redirects to register page if session is not found', () => {
+test('stays in register page if session is not found', () => {
   render(<App />)
-  expect(screen.getByTestId('register-form')).toBeInTheDocument()
+  expect(screen.getByTestId('form')).toBeInTheDocument()
 })

@@ -8,18 +8,13 @@ export function AuthPageWithForm() {
     CurrentForm.Register
   )
 
+  
   return (
     <AuthPage>
       {currentForm === 'register' ? (
-        <FormWithRegister
-          data-testid='register-form'
-          setCurrentForm={setCurrentForm}
-        />
+        <FormWithRegister setCurrentForm={setCurrentForm} />
       ) : (
-        <FormWithLogin
-          data-testid='login-form'
-          setCurrentForm={setCurrentForm}
-        />
+        <FormWithLogin setCurrentForm={setCurrentForm} />
       )}
     </AuthPage>
   )

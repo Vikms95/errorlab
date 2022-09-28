@@ -197,19 +197,16 @@ v row of 3 columns
 <!-- USER PROFILE -->
  
  
- 
- 
- 
 SECONDARY FUNCTIONALITY
  
 
- TODO
- <!-- - Figure out how to use same Postgre database on different computers
-  :upload to Railway? -->
-  <!-- :upload to Render?(90 days free) -->
- - Problem with @typescript-eslint/parser comes with Node version?
- 
- - Create Models
- <!-- - Create Components -->
+TODO
+<!-- - Figure out how to use same Postgre database on different computers
+:upload to Railway? -->
+<!-- :upload to Render?(90 days free) -->
+<!-- - Problem with @typescript-eslint/parser comes with Node version? -->
+
+<!-- - Create Base Components -->
+- Make skeleton of Project and Ticket 
 
 
