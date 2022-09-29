@@ -5,7 +5,7 @@ interface Props {
   children?: ReactElement | ReactElement[]
 }
 
-export function ProjectInfo({ children }: Props) {
+export function TaskHeader({ children }: Props) {
   return (
     <Col className='col-md-12'>
       <Row className='flex-lg-nowrap gap-3'>{children}</Row>

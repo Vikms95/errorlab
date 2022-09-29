@@ -209,5 +209,4 @@ TODO
 <!-- - Create Base Components -->
 - Make skeleton of Project and Ticket
   <!-- :make ProjectWithTickets -->
-  :within ProjectWithTickets it will just be an extension to include TicketsLayout
-
+  :create Ticket skeleton
