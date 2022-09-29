@@ -26,7 +26,7 @@ export function Project({ children }: Props) {
       style={{ backgroundColor: '#edf1f5' }}
       data-testid='project'
     >
-      <Col className='gap-3'>e
+      <Col className='gap-3'>
         <TaskHeader>
           <TaskOverview
             progress={1}
@@ -35,14 +35,12 @@ export function Project({ children }: Props) {
           />
 
           <TaskDetails details={details} />
-        </TaskHeader>e
-
+        </TaskHeader>
         <ProjectActivity>
           <ProjectHistory />
           <ProjectManager />
           <ProjectTeam />
         </ProjectActivity>
-
         {children}
       </Col>
     </Container>
