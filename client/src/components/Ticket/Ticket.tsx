@@ -18,7 +18,7 @@ export function Ticket() {
       style={{ backgroundColor: '#edf1f5' }}
       data-testid='ticket'
     >
-      <Col className='gap-3'>
+      <Col className='gap-3 g-0'>
         <TaskHeader>
           <TaskOverview
             progress={1}
