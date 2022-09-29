@@ -1,6 +1,6 @@
-import { useFormInput } from "./useFormInput";
+// import { useFormInput } from "./useFormInput";
 
-test('form is updated', () => {
-  let text = ''
-  useFormInput()
-})
+// test('form is updated', () => {
+// })
+
+export const hi = "Hi"
