@@ -4,7 +4,6 @@ export  interface ITaskOverview {
   progress: number
 }
 
-
 export interface ITaskDetails {
   details: {
     startDate: string
@@ -25,3 +24,6 @@ export interface ITicketDetails extends ITaskDetails{
   }
 }
 
+export function isTicket (details: any): details is ITicketDetails {
+  return 'developer' in details
+}
