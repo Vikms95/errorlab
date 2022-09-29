@@ -7,8 +7,8 @@ interface Props {
 
 export function ProjectActivity({ children }: Props) {
   return (
-    <Col className='col-md-12 mt-3'>
-      <Row className='flex-xl-nowrap gap-3'>{children}</Row>
+    <Col className='col-md-12 mt-3 g-0'>
+      <Row className='flex-xl-nowrap gap-3 g-0'>{children}</Row>
     </Col>
   )
 }

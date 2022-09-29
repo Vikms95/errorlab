@@ -22,11 +22,11 @@ export function Project({ children }: Props) {
   return (
     <Container
       fluid
-      className='vh-100 p-4 p-sm-5'
+      className='vh-100 p-3 p-sm-4 p-md5'
       style={{ backgroundColor: '#edf1f5' }}
       data-testid='project'
     >
-      <Col className='gap-3'>
+      <Col className='gap-3'>e
         <TaskHeader>
           <TaskOverview
             progress={1}
@@ -35,7 +35,7 @@ export function Project({ children }: Props) {
           />
 
           <TaskDetails details={details} />
-        </TaskHeader>
+        </TaskHeader>e
 
         <ProjectActivity>
           <ProjectHistory />

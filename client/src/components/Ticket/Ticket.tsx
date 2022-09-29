@@ -14,11 +14,11 @@ export function Ticket() {
   return (
     <Container
       fluid
-      className='vh-100 p-4 p-sm-5'
+      className='vh-100 p-3 p-sm-4 p-md-5'
       style={{ backgroundColor: '#edf1f5' }}
       data-testid='ticket'
     >
-      <Col className='gap-3 g-0'>
+      <Col className='gap-3'>
         <TaskHeader>
           <TaskOverview
             progress={1}

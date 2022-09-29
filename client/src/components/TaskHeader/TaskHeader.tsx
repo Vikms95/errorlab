@@ -7,8 +7,8 @@ interface Props {
 
 export function TaskHeader({ children }: Props) {
   return (
-    <Col className='col-md-12'>
-      <Row className='flex-lg-nowrap gap-3'>{children}</Row>
+    <Col className='col-md-12 g-0'>
+      <Row className='flex-lg-nowrap gap-3 g-0'>{children}</Row>
     </Col>
   )
 }
