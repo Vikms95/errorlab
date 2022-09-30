@@ -8,7 +8,6 @@ export function AuthPageWithForm() {
     CurrentForm.Register
   )
 
-  
   return (
     <AuthPage>
       {currentForm === 'register' ? (

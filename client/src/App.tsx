@@ -1,7 +1,12 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Dashboard, AuthPageWithForm, ProjectWrapper } from './components'
+import {
+  Dashboard,
+  AuthPageWithForm,
+  ProjectWrapper,
+  Modal,
+} from './components'
 import { Container } from 'react-bootstrap'
 import { Ticket } from './components/Ticket/Ticket'
 
@@ -15,6 +20,7 @@ export function App() {
           <Route path='/project' element={<ProjectWrapper />} />
           <Route path='/ticket' element={<Ticket />} />
         </Routes>
+        <Modal />
       </Container>
     </Router>
   )

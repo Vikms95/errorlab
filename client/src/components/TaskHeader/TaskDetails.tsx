@@ -1,10 +1,5 @@
 import { Col, Row } from 'react-bootstrap'
-import {
-  IDetails,
-  ITaskDetails,
-  ITicketDetails,
-  isTicket,
-} from '../../types/TaskHeader'
+import { IDetails, isTicket } from '../../types/TaskHeader'
 
 export function TaskDetails({ details }: IDetails) {
   const { startDate, deadLine, priority, status } = details

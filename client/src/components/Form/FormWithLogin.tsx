@@ -9,18 +9,22 @@ interface Props {
 export function FormWithLogin({ setCurrentForm }: Props) {
   return (
     <Form>
-      <FormBS.Group className='py-3'>
-        <FormBS.Label>Username</FormBS.Label>
-        <FormBS.Control type='text' />
+      <FormBS.Group className='py-3 px-5 mx-2'>
+        <FormBS.Label className='text-primary fw-semibold'>
+          Username
+        </FormBS.Label>
+        <FormBS.Control type='text' className='px-5' />
       </FormBS.Group>
 
-      <FormBS.Group className='py-3'>
-        <FormBS.Label>Password</FormBS.Label>
-        <FormBS.Control type='password' />
+      <FormBS.Group className='py-3 px-5 mx-2'>
+        <FormBS.Label className='text-primary fw-semibold'>
+          Password
+        </FormBS.Label>
+        <FormBS.Control type='password' className='px-5' />
       </FormBS.Group>
 
       <Button
-        className='align-self-center'
+        className='align-self-center px-5 py-1 mt-4 fw-semibold'
         variant='primary'
         onClick={() => setCurrentForm(CurrentForm.Register)}
       >
