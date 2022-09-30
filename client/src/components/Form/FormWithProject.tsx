@@ -1,6 +1,6 @@
 import { Form } from './index'
 import { GroupInput } from './FormGroup/GroupInput'
-import { Button, Form as FormBS } from 'react-bootstrap'
+import { Button, Row, Form as FormBS } from 'react-bootstrap'
 import { GroupSelect } from './FormGroup/GroupSelect'
 
 export function FormWithProject() {

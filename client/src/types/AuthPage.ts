@@ -1,4 +1,1 @@
-export enum CurrentForm {
-  Register = 'register',
-  Login = 'login',
-}
+export const hi ="h"

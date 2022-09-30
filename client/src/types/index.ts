@@ -1,1 +1,1 @@
-export {CurrentForm} from './AuthPage'
+export {CurrentAuthForm, CurrentTaskForm} from './Form'

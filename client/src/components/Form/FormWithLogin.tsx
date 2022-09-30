@@ -1,10 +1,10 @@
 import { Form } from './index'
-import { CurrentForm } from '../../types/AuthPage'
+import { CurrentAuthForm } from '../../types'
 import { Button, Form as FormBS } from 'react-bootstrap'
 import { GroupInput } from './FormGroup/GroupInput'
 
 interface Props {
-  setCurrentForm: React.Dispatch<React.SetStateAction<CurrentForm>>
+  setCurrentForm: React.Dispatch<React.SetStateAction<CurrentAuthForm>>
 }
 
 export function FormWithLogin({ setCurrentForm }: Props) {
@@ -17,7 +17,7 @@ export function FormWithLogin({ setCurrentForm }: Props) {
         <Button
           className='align-self-center px-5 py-1 mt-4 fw-semibold'
           variant='primary'
-          onClick={() => setCurrentForm(CurrentForm.Register)}
+          onClick={() => setCurrentForm(CurrentAuthForm.Register)}
         >
           Login
         </Button>

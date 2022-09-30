@@ -3,9 +3,12 @@ import { FormWithProject } from '../Form/FormWithProject'
 import { FormWithTicket } from '../Form/FormWithTicket'
 
 export function ModalWithForm() {
+  const currentForm = 'project'
   return (
-    <Modal>
-      <FormWithTicket></FormWithTicket>
+    <Modal
+      title={currentForm === 'project' ? 'Create project' : 'Create ticket'}
+    >
+      {currentForm === 'project' ? <FormWithProject /> : <FormWithTicket />}
     </Modal>
   )
 }
