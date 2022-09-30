@@ -210,7 +210,9 @@ TODO
 <!-- - Make skeleton of Project and Ticket -->
   <!-- :make ProjectWithTickets -->
   <!-- :create Ticket skeleton -->
-: create Form for creating a Project and another one to create a Ticket
+<!-- - Create Form for creating a Project and another one to create a Ticket -->
   :use Hook from React Beta docs to handle inputs
-  :do an extension of Form(FormTask) and then do FormTaskWithProject or FormTaskWithTicket?
+  <!-- :do an extension of Form(FormTask) and then do FormTaskWithProject or FormTaskWithTicket? -->
+- Create Modal
+  :it will either hold Text or a Form
 

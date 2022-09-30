@@ -7,6 +7,7 @@ import {
   ProjectWrapper,
   Modal,
 } from './components'
+import { ModalWithForm } from 'components/Modal/ModalWithForm'
 import { Container } from 'react-bootstrap'
 import { Ticket } from './components/Ticket/Ticket'
 
@@ -21,7 +22,7 @@ export function App() {
           <Route path='/ticket' element={<Ticket />} />
         </Routes>
       </Container>
-      <Modal />
+      <ModalWithForm />
     </Router>
   )
 }
