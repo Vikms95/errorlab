@@ -1,5 +1,5 @@
 import { Form, FormGroup } from './index'
-import { Button } from 'react-bootstrap'
+import { Button, Form as FormBS } from 'react-bootstrap'
 import { CurrentForm } from '../../types/AuthPage'
 
 interface Props {
@@ -9,17 +9,19 @@ interface Props {
 export function FormWithRegister({ setCurrentForm }: Props) {
   return (
     <Form>
-      <FormGroup label='Username' type='text' />
-      <FormGroup label='Password' type='password' />
-      <FormGroup label='Confirm password' type='password' />
+      <FormBS className='bg-white d-flex flex-column py-5 px-3 rounded-3 shadow-lg'>
+        <FormGroup label='Username' type='text' />
+        <FormGroup label='Password' type='password' />
+        <FormGroup label='Confirm password' type='password' />
 
-      <Button
-        className='align-self-center px-5 mt-3 fw-semibold'
-        variant='primary'
-        onClick={() => setCurrentForm(CurrentForm.Login)}
-      >
-        Register
-      </Button>
+        <Button
+          className='align-self-center px-5 mt-3 fw-semibold'
+          variant='primary'
+          onClick={() => setCurrentForm(CurrentForm.Login)}
+        >
+          Register
+        </Button>
+      </FormBS>
     </Form>
   )
 }

@@ -12,9 +12,7 @@ export function Form({ children }: Props) {
       data-testid='form'
       className='d-flex justify-content-center align-items-center h-100'
     >
-      <FormBS className='bg-white d-flex flex-column py-5 px-3 rounded-3 shadow-lg'>
-        {children}
-      </FormBS>
+      {children}
     </Container>
   )
 }

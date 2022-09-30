@@ -20,8 +20,8 @@ export function App() {
           <Route path='/project' element={<ProjectWrapper />} />
           <Route path='/ticket' element={<Ticket />} />
         </Routes>
-        <Modal />
       </Container>
+      <Modal />
     </Router>
   )
 }
