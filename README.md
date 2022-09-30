@@ -216,4 +216,7 @@ TODO
 - Create Modal
   :it will either hold Text or a Form
     :figure out how to render one or the other
+      :create ModalWrapper to decide which one to choose based on state held on App top level? 
+-Create Navbar skeleton
+-Create Previews skeleton
 

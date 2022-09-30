@@ -8,11 +8,11 @@ interface Props {
 
 export function Modal({ children, title }: Props) {
   return (
-    <ModalBS show={true} size='lg' centered>
-      <ModalBS.Header closeButton>
-        <ModalBS.Title>{title}</ModalBS.Title>
+    <ModalBS show={false} size='lg' centered>
+      <ModalBS.Header closeButton className='px-5'>
+        <ModalBS.Title className='px-5 fw-bolder'>{title}</ModalBS.Title>
       </ModalBS.Header>
-      <ModalBS.Body>{children}</ModalBS.Body>
+      <ModalBS.Body className='py-0'>{children}</ModalBS.Body>
     </ModalBS>
   )
 }
