@@ -4,26 +4,26 @@ export  interface ITaskOverview {
   progress: number
 }
 
+export interface IDetails {
+  details: ITaskDetails | ITicketDetails
+}
+
 export interface ITaskDetails {
-  details: {
     startDate: string
     deadLine: string
     priority: string
     status?: string
-  }
 }
 
 export interface ITicketDetails extends ITaskDetails{
-  details: {
     startDate: string
     deadLine: string
     priority: string
     status?: string
     type: string
     developer: string
-  }
 }
 
-export function isTicket (details: any): details is ITicketDetails {
-  return 'developer' in details
-}
+export const isTicket = (details: any): details is ITicketDetails => (
+  Boolean(details.startDate) && Boolean(details.developer)
+)

@@ -11,6 +11,8 @@ export function Ticket() {
     developer: 'Victor',
     type: 'feature',
   }
+  const hello = { ...details }
+  console.log(hello)
   return (
     <Container
       fluid

@@ -1,9 +1,13 @@
 import { Col, Row } from 'react-bootstrap'
-import { ITaskDetails, ITicketDetails, isTicket } from '../../types/TaskHeader'
+import {
+  IDetails,
+  ITaskDetails,
+  ITicketDetails,
+  isTicket,
+} from '../../types/TaskHeader'
 
-export function TaskDetails({ details }: ITaskDetails | ITicketDetails) {
+export function TaskDetails({ details }: IDetails) {
   const { startDate, deadLine, priority, status } = details
-
   return (
     <Col className='bg-white rounded-3 g-0'>
       <Row className='p-2 p-sm-3 g-0'>{startDate} </Row>
