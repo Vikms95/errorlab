@@ -15,7 +15,7 @@ import { Ticket } from './components/Ticket/Ticket'
 export function App() {
   return (
     <Router>
-      <Container fluid className='h-100 d-flex flex-row' data-testid='app'>
+      <Container fluid className='app h-100 d-flex flex-row' data-testid='app'>
         <Navbar></Navbar>
         <Routes>
           <Route path='/' element={<AuthPageWithForm />} />

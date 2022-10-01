@@ -1,5 +1,4 @@
 import { ReactElement } from 'react'
-import { Navbar as NavbarBS } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 interface Props {
@@ -8,11 +7,26 @@ interface Props {
 
 export function Navbar({ children }: Props) {
   return (
-    <NavbarBS className='px-5 position-fixed h-100 bg-white navbar-collapse'>
+    <nav className='side-navbar'>
       <ul className='inner-navbar'>
-        <Link to='/dashboard'>Errorlab</Link>
+        <Link className='nav-link' to='/dashboard'>
+          <span className='link-text'> this should not show</span>
+        </Link>
+        <Link className='nav-link' to='/dashboard'>
+          <span className='link-text'> this should not show</span>
+        </Link>
+        <Link className='nav-link' to='/dashboard'>
+          <span className='link-text'> this should not show</span>
+        </Link>
+        <Link className='nav-link' to='/dashboard'>
+          <span className='link-text'> this should not show</span>
+        </Link>
+        <Link className='nav-link' to='/dashboard'>
+          <span className='link-text'> this should not show</span>
+        </Link>
+
         {children}
       </ul>
-    </NavbarBS>
+    </nav>
   )
 }
