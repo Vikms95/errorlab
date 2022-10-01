@@ -1,5 +1,7 @@
 import { ReactElement } from 'react'
 import { Link } from 'react-router-dom'
+import { FiChevronsRight } from 'react-icons/fi'
+import { FaHome, FaClipboard, FaTicketAlt, FaWarehouse } from 'react-icons/fa'
 
 interface Props {
   children?: ReactElement | ReactElement[]
@@ -11,33 +13,33 @@ export function Navbar({ children }: Props) {
       <ul className='inner-navbar'>
         <Link className='nav-link' to='/dashboard'>
           <div className='nav-item'>
-            <div>emote</div>
-            <span className='link-text'> this should not show</span>
+            <span className='title-text'> Errorlab </span>
+            <FiChevronsRight className='nav-arrow' />
           </div>
         </Link>
         <Link className='nav-link' to='/dashboard'>
           <div className='nav-item'>
-            <div>emote</div>
-            <span className='link-text'> this should not show</span>
+            <FaHome />
+            <span className='link-text'> Dashboard </span>
           </div>
         </Link>
         <Link className='nav-link' to='/dashboard'>
           <div className='nav-item'>
-            <div>emote</div>
-            <span className='link-text'> this should not show</span>
+            <FaWarehouse />
+            <span className='link-text'> Company </span>
           </div>
         </Link>
 
         <Link className='nav-link' to='/dashboard'>
           <div className='nav-item'>
-            <div>emote</div>
-            <span className='link-text'> this should not show</span>
+            <FaClipboard />
+            <span className='link-text'> Project </span>
           </div>
         </Link>
         <Link className='nav-link' to='/dashboard'>
           <div className='nav-item'>
-            <div>emote</div>
-            <span className='link-text'> this should not show</span>
+            <FaTicketAlt />
+            <span className='link-text'> Ticket </span>
           </div>
         </Link>
 
