@@ -2,15 +2,17 @@
   outline: 1px solid limegreen;
 }
 
+:root{
+  font-size: 16px;
+}
+
 html,
 body,
 #root {
   height: 100%;
 }
 
-.app{
-  margin-left: 5rem !important;
-}
+
 
 body::-webkit-scrollbar {
 	width: 0.75rem;
@@ -29,10 +31,6 @@ body::-webkit-scrollbar-thumb {
 .container-fluid {
   padding-left: 0  !important;
   padding-right: 0  !important;
-}
-
-:root{
-  font-size: 16px;
 }
 
 .side-navbar{
@@ -87,6 +85,7 @@ body::-webkit-scrollbar-thumb {
 
 .link-text{
   display: none;
+  white-space: no-wrap;
 }
 
 .side-navbar:hover{
