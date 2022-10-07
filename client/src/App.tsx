@@ -7,10 +7,11 @@ import {
   ProjectWrapper,
   Modal,
   Navbar,
+  Ticket,
 } from './components'
 import { ModalWithForm } from 'components/Modal/ModalWithForm'
 import { Container } from 'react-bootstrap'
-import { Ticket } from './components/Ticket/Ticket'
+import { Preview } from 'components/Preview/Preview'
 
 export function App() {
   return (
@@ -22,6 +23,7 @@ export function App() {
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/project' element={<ProjectWrapper />} />
           <Route path='/ticket' element={<Ticket />} />
+          <Route path='/project-preview' element={<Preview />} />
         </Routes>
       </Container>
       <ModalWithForm />

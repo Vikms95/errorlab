@@ -219,4 +219,5 @@ TODO
       :create ModalWrapper to decide which one to choose based on state held on App top level? 
 -Create Navbar skeleton
 -Create Previews skeleton
-
+  -Render specialized
+  - 

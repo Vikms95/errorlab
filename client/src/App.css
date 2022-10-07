@@ -19,7 +19,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-	background: #0d6efd;
+	background: #006ce4;
 	border-radius: 10px;
 }
 
@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 1em 0;
+	padding: 1em .4em;
 	box-shadow: 21px 2px 48px -1px rgba(0, 0, 0, 0.09);
 	transition: width 300ms ease;
 	z-index: 1;
@@ -64,13 +64,13 @@ body::-webkit-scrollbar-thumb {
 	margin-bottom: 1rem;
 	width: 100%;
 	margin-top: 0.5em;
-	color: #4f29b6;
+	color: #006ce4;
 	width: 100%;
-	margin-left: -0.5em;
+	margin-left: -0.25em;
 }
 
 .nav-arrow > svg {
-  color: #4f29b6;
+  color: #006ce4;
   transform: rotate(0deg);
   transition: transform 300ms;
 }
@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  row-gap: 1em;
+  row-gap: .5em;
   width: 100%;
 }
 
@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb {
 	justify-content: flex-start;
 	align-items: center;
 	padding: 0.5em 0;
-	color: #0d6efd;
+	color: #006ce4;
   column-gap: 10px;
 	font-size: 1.5em;
 	font-weight: 500;
@@ -119,7 +119,7 @@ body::-webkit-scrollbar-thumb {
 .nav-item:hover{
 		filter: grayscale(0%) opacity(1);
 }
-
+ 
 .nav-link{
   display: flex;
   align-items: center;
