@@ -6,7 +6,6 @@
 
 .inner-navbar{
   padding-inline-start: '0';
-  /* list-style: 'none'; */
   display: 'flex';
   flex-direction: 'column';
   justify-content: 'space-around';
