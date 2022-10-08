@@ -1,14 +1,21 @@
-// import { SyntheticEvent, useState } from "react";
+import { SyntheticEvent, useState } from "react";
 
-// export function useFormInput(initialValue: string) {
-//  const [value, setValue] = useState(initialValue)
+interface useFormInputReturn {
+   value: string    
+   handleChange: (e: SyntheticEvent) => void;
+}
 
-//  const handleChange = (e: SyntheticEvent) => {
-//   const element = e.currentTarget as HTMLInputElement | HTMLTextAreaElement
-//   setValue(element.value)
-//  }
+export function useFormInput(initialValue: string = ''): useFormInputReturn {
+ const [value, setValue] = useState(initialValue)
 
-//  return { value, handleChange }
-// }
+ const handleChange = (e: SyntheticEvent): void => {
+  const element = e.currentTarget as HTMLInputElement | HTMLTextAreaElement
+  setValue(element.value)
+ }
 
-export const hi = "hi"
+ const inputControl = {
+  value, handleChange
+ }
+
+ return inputControl
+}

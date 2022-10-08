@@ -1,6 +1,8 @@
+
 export interface IGroupInput {
   label: string
-  type: string
+  type: string   
+  name: string
 }
 
 export interface IGroupSelect {

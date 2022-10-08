@@ -217,7 +217,22 @@ TODO
   :it will either hold Text or a Form
     :figure out how to render one or the other
       :create ModalWrapper to decide which one to choose based on state held on App top level? 
--Create Navbar skeleton
--Create Previews skeleton
-  -Render specialized
-  - 
+<!-- -Create Navbar skeleton -->
+<!-- -Create Previews skeleton -->
+  <!-- -Render specialized -->
+  <!-- -  -->
+
+- Make full implementation to create a User
+  :post request from form
+  :endpoint taking that post request
+  :middleware creating the user and saving it to Postgre with sequelize
+  :returning a response from the server to let the frontend know
+- Make full implementation to login a User
+- Make full implementation to let the user create a Project
+  :post request from form
+  :endpoint taking that post request
+  :middleware creating the project and saving it to Postgre with sequelize
+  :returning a response from the server to let the frontend know
+  :if succesful, add project to the frontend state
+- Make full implementation to let the user create a Ticket inside a Project
+
