@@ -58,17 +58,17 @@ export function Navbar({ children }: Props) {
         <Link className='nav-link' to='/dashboard'>
           <li className='nav-item'>
             <FaClipboard />
-            <span className='link-text'> Project </span>
+            <span className='link-text'> Projects </span>
           </li>
         </Link>
         <Link className='nav-link' to='/dashboard'>
           <li className='nav-item'>
             <FaTicketAlt />
-            <span className='link-text'> Ticket </span>
+            <span className='link-text'> Tickets </span>
           </li>
         </Link>
         {children}
-        <Link className='nav-link settings' to='/dashboard'>
+        <Link className='nav-link' to='/dashboard'>
           <li className='nav-item'>
             <FaCog />
             <span className='link-text'> Settings </span>

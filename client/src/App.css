@@ -9,6 +9,10 @@ body,
   height: 100%;
 }
 
+#root{
+  margin-left: 5em;
+}
+
 body::-webkit-scrollbar {
 	width: 0.75rem;
 }
@@ -29,6 +33,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .side-navbar{
+  background-color: white;
   position: fixed;
   left: 0;
   transition: width 300ms ease;
@@ -38,7 +43,7 @@ body::-webkit-scrollbar-thumb {
 	padding: 1em 0;
 	box-shadow: 21px 2px 48px -1px rgba(0, 0, 0, 0.09);
 	transition: width 300ms ease;
-	z-index: 2;
+	z-index: 999;
 	overflow: hidden;
 }
 
@@ -115,7 +120,6 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(238, 237, 237);
 }
 
-
 .link-text,
 .title-text{
   display: none;
@@ -123,11 +127,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .title-text{
+  color: black;
   font-size: 1.2em;
   padding-left: 1em;
 }
 
 @media only screen and (max-width: 600px) {
+  #root{
+    margin-left: 0;
+  }
   .side-navbar{
     bottom:0;
     width: 100vw;
@@ -135,22 +143,29 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
   }
 
+
   .logo {
     display: none;
   }
 
   .inner-navbar {
     flex-direction: row;
+    padding-inline-start: 15px;
   }
 
   .nav-link{
     justify-content: center;
   }
 
+  .nav-link:first-child{
+    display: none;
+  }
+
 
 }
 
 @media only screen and (min-width: 600px) {
+
   .side-navbar{
     top: 0;
     height: 100% ;

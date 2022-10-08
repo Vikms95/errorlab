@@ -11,19 +11,19 @@ import {
 } from './components'
 import { ModalWithForm } from 'components/Modal/ModalWithForm'
 import { Container } from 'react-bootstrap'
-import { Preview } from 'components/Preview/Preview'
+import { ProjectPreview } from 'components/Preview/ProjectPreview'
 
 export function App() {
   return (
     <Router>
       <Container fluid className='app h-100 d-flex flex-row' data-testid='app'>
-        <Navbar></Navbar>
+        <Navbar />
         <Routes>
           <Route path='/' element={<AuthPageWithForm />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/project' element={<ProjectWrapper />} />
           <Route path='/ticket' element={<Ticket />} />
-          <Route path='/project-preview' element={<Preview />} />
+          <Route path='/project-preview' element={<ProjectPreview />} />
         </Routes>
       </Container>
       <ModalWithForm />
