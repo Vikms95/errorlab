@@ -1,8 +1,10 @@
-import React, { useRef } from 'react'
+import React, { SyntheticEvent, useRef } from 'react'
 import { Form } from './index'
 import { Button, Form as FormBS } from 'react-bootstrap'
 import { CurrentAuthForm } from '../../types'
 import { GroupInput } from './FormGroup/GroupInput'
+import { useFetch } from '../../hooks/useFetch'
+import { createUser } from '../../services/user'
 
 interface Props {
   setCurrentForm: React.Dispatch<React.SetStateAction<CurrentAuthForm>>
@@ -10,10 +12,17 @@ interface Props {
 
 export function FormWithRegister({ setCurrentForm }: Props) {
   const formRef = useRef(null)
-  const onSubmit = () => {
+  const [{ error, loading }, commitFetch] = useFetch(createUser, [])
+
+  const onSubmit = (e: SyntheticEvent) => {
+    e.preventDefault()
+
     const formData = new FormData(formRef.current as unknown as HTMLFormElement)
-    console.log(formData.get('confirm'))
+    // Call service
+    // Await for data
+    // Give feedback to frontend on whether it should move forward or show error message
   }
+
   return (
     <Form>
       <FormBS
@@ -28,7 +37,7 @@ export function FormWithRegister({ setCurrentForm }: Props) {
         <Button
           className='align-self-center px-5 mt-3 fw-semibold'
           variant='primary'
-          onClick={onSubmit}
+          onClick={() => onSubmit(commitFetch)}
         >
           Register
         </Button>

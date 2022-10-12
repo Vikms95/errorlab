@@ -7,9 +7,13 @@ export function FormWithProject() {
   return (
     <Form>
       <FormBS className='bg-white d-flex flex-column py-5 px-3 rounded-3 w-100'>
-        <GroupInput label='Project title' type='text' />
-        <GroupInput label='Project description' type='text' />
-        <GroupInput label='Deadline' type='date' />
+        <GroupInput label='Project title' name='title' type='text' />
+        <GroupInput
+          label='Project description'
+          name='description'
+          type='text'
+        />
+        <GroupInput label='Deadline' name='date' type='date' />
         <GroupSelect label='Priority' options={[]} />
         <GroupSelect label='Status' options={[]} />
 
