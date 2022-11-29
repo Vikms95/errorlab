@@ -1,6 +1,6 @@
 # errorlab
 
-REMINDERS
+REMINDERSss
  - Start with mobile first
  - Plan on which composition pattern will you use for each Component
  
